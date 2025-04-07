@@ -78,3 +78,7 @@ em:relative to the parent elements font size and is useful for spacing
 
 ch:character unit- based on the width of the 0 character 
 40ch=40 characters wide.
+
+## vw and vh
+vw is viewport width 1vw is 1% of the browser window widht
+vh is vuewport height 1vh is 1% of the browser windows height 
