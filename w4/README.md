@@ -22,3 +22,11 @@ Example
 p {
     color; red;
 }
+
+## Selectors
+Id selector targets specific element with unique id
+it uses the # symbol in css like #main-title {color: red;}
+it should only be used once per page
+
+the universal selector targets all elements
+it is usefull for resetting styles
