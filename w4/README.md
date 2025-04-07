@@ -30,3 +30,25 @@ it should only be used once per page
 
 the universal selector targets all elements
 it is usefull for resetting styles
+
+# specificity
+
+Determines which CSS rule wins when there are multiple rules
+More specific ones such as id's override general ones like classes or elements
+inline styles are the most specific
+
+## Inheritance
+some properties such as font family and color are inherited from parent elements
+
+# Chrome DevTool
+Right click> inspect element.
+Use styles to see what Css is applied andd what rules are overidden.
+
+# DRY
+Avoiding to repeat yourself in order to have a clean organized code
+use classes to group common styles and reduce repetition
+ # !important and why to avoid
+ It forces a style to appyl, overriding everything else
+it should be used only when necessary as it breaks the cascade. 
+it breaks the natural order of styles 
+other developers may not understand why a style isnt working unless they spot it
