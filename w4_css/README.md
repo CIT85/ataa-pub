@@ -82,3 +82,19 @@ ch:character unit- based on the width of the 0 character
 ## vw and vh
 vw is viewport width 1vw is 1% of the browser window widht
 vh is vuewport height 1vh is 1% of the browser windows height 
+
+# intro to box model 
+content is actual text or image
+padding is space around content
+border is the otline around the padding
+margin is the space outside the border
+
+# longhand shorthand margin
+longhand lets you see each side individually
+short hand is cleaner and faster 
+
+# padding and border notation 
+padding adds space insiide the element, between content
+border outlines the element 
+
+
