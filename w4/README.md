@@ -52,3 +52,17 @@ use classes to group common styles and reduce repetition
 it should be used only when necessary as it breaks the cascade. 
 it breaks the natural order of styles 
 other developers may not understand why a style isnt working unless they spot it
+
+# colors
+
+There are 4 different ways to write colors:
+Color name: red, blue black 
+Hex code:#000000, #ffffff
+rgb: rgb(255,0,0) (RED GREEN BLACK)
+hsl: hsl(o,100%,50%) (HUE SATURATION LIGHTNESS)
+
+with VS code color picker you can choose colors visually and adjust trancparenct and see a preview before applying
+
+good color contrast improves readability and accesibilty of the page 
+low contrast= hard to read
+coolors.com is great for contrast checking and palettes
