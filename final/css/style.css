@@ -1,0 +1,331 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE BODY STYLES ===== */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ===== HEADER STYLING ===== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ===== NAVIGATION BAR - FLEXIBLE INLINE LAYOUT ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  z-index: 1000;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block; /* Used for horizontal menu layout */
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f3efef;
+  font-weight: bold;
+}
+
+/* ===== LINK STATES FOR ACCESSIBILITY ===== */
+a:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #888;
+}
+
+a:focus {
+  outline: 2px dashed #222;
+}
+
+/* ===== TABLE STYLING ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+thead {
+  background-color: #111;
+  color: #fff;
+}
+
+/* ===== LIST STYLING ===== */
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* ===== HIGHLIGHTED TEXT ===== */
+mark {
+  background-color: #111;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* ===== TYPOGRAPHY STYLING FOR HEADINGS ===== */
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* ===== PARAGRAPH SPACING ===== */
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===== ACCESSIBILITY: HIDES VISUAL ELEMENTS BUT KEEPS FOR SCREENREADERS ===== */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ===== IMAGE CENTERING AND RESPONSIVENESS ===== */
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== FIGURE AND CAPTION STYLING ===== */
+figure {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* ===== FIXED "BACK TO TOP" LINK IN FOOTER ===== */
+footer a[href="#top"] {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #222;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* ===== CALLOUT BOX (DECORATIVE ENHANCEMENT) ===== */
+.callout {
+  position: relative;
+  top: 0.5rem;
+  background-color: #fff;
+  color: #111;
+  padding: 1rem;
+  border: 2px solid #111;
+  width: 250px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+/* ===== COLOR PALETTE SWATCHES FOR site.html ===== */
+.swatch {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 1rem;
+  text-align: center;
+  border: 2px solid #333;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* ===== CENTERED CLASS FOR SITE MAP + PAGE LAYOUT ===== */
+.centered {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* ===== STYLED DEFINITION LISTS (used on site.html and intrigue) ===== */
+dl {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+dd {
+  margin-bottom: 1rem;
+}
+
+/* ===== PLACEHOLDER CLASS FOR FLOAT (FROM EARLIER PHASE) ===== */
+.fact-columns {
+  overflow: hidden;
+}
+
+/* ===== FLEXBOX HEADER LAYOUT =====
+   Automatically wraps on smaller screens. */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== GRID LAYOUT FOR MAIN CONTENT ===== 
+   Creates a two-column layout for larger screens.
+   Responsive adjustments will stack these on smaller viewports. */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+main section {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+/* Base setup for responsive layout — small screen support begins */
+
+/* === Small devices (phones, up to 576px) === */
+@media (max-width: 576px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .callout {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* === Medium devices (tablets, 577px–768px) === */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Large devices (small desktops, 769px–992px) === */
+@media (max-width: 992px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* === Landscape screens (short but wide) === */
+@media (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  nav li {
+    margin: 0.3rem;
+  }
+}
