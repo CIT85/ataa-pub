@@ -58,3 +58,9 @@ All images use `width` and `height` attributes to prevent layout shift, and `loa
 ## Last-Minute Notes
 - All validation passed
 - Layout and responsiveness confirmed on multiple screen sizes
+
+## Hero Image Design
+
+I added a hero section to the top of `index.html` using a CSS background image. The image I selected (club.png) represents Carsi fan group, which is the symbolic ultras fan group and the "real owner" of Beşiktaş. I placed it at the top of the page to immediately convey the spirit and atmosphere of the club.
+
+For styling, I used `background-size: cover`, `background-position: center`, and an overlay with `rgba(0, 0, 0, 0.5)` to improve contrast for the white text. This ensures that the image scales properly on different screen sizes while maintaining readability and visual appeal.
